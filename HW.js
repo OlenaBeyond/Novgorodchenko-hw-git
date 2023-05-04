@@ -10,20 +10,13 @@
     (Змінні типу інтеджер містять кількість продуктів в наявності у вигляді вхідних даних)
 
 
-let hamburgers = 4;
-let fries = 1;
-
-if(hamburgers >=4 && fries){
-    console.log('Ми поїли')
-};
-
 let hamburgers1 = 3;
 let fries1 = 1;
-
-if(hamburgers1 < 4 ||  fries1 < 1){
+if(hamburgers1 >=4 && fries1){
+    console.log('Ми поїли')
+} else {
     console.log('Ми йдемо в інше кафе')
 };
-
  
 
 2.  Напишіть умовну конструкцію if, що перевіряє, чи знаходиться значення ціни товару між 1000 та 1900 включно.
@@ -31,9 +24,11 @@ if(hamburgers1 < 4 ||  fries1 < 1){
 
     let num = 1001;
 
-    if(num >= 1000 || num >=1900){
+    if(num >= 1000 && num <= 1900){
         console.log('accepted')
-    }
+     } else {
+            console.log('rejected')
+        };
 
 
 
@@ -43,14 +38,18 @@ if(hamburgers1 < 4 ||  fries1 < 1){
 
     let num = 900;
 
-    if(num <= 1000 || num >=1900){
-        console.log('accepted')
+    if(num >= 1000 || num <= 1900){
+        console.log('not in a range ')
+    } else {
+        console.log('in a range ')
     };
 
     let num = 2000;
 
-    if(!(num <= 1000 || num <=1900)){
-        console.log('accepted')
+    if(!(num <= 1000 && num <=1900)){
+        console.log('match')
+    } else {
+        console.log('not match')
     }
 
 
@@ -60,16 +59,16 @@ if(hamburgers1 < 4 ||  fries1 < 1){
     Результат виводити в консоль.
 
     
-    let season = 4;
+    let season = 1;
 
-    if(season == 4){
-        console.log('spring')
-    }else if(season == 1){
-        console.log('autumn')
-    }else if(season == 2){
+    if(season == 1){
         console.log('winter')
+    }else if(season == 2){
+        console.log('spring')
     }else if(season == 3){
         console.log('summer')
+    }else if(season == 4){
+        console.log('autumn')
     } else{
         console.log('false')
     }
@@ -115,16 +114,30 @@ console.log("avg(" + a + ", " + b + ", " + c + ") = " + avg)
     За заданим номером вивести назву дня тижня використовуючи switch.
     Результат виводити в консоль.
 
-    let dayoftheweek = 'Friday';
+    let dayoftheweek = '4';
 
     switch(dayoftheweek){
-        case 'Friday':
-            console.log(5);
+        case '1':
+            console.log('Monday');
             break;
-        case 'Sunday':
-            console.log(7)
-
-    };
+            case '2':
+            console.log('Tuesday');
+            break;
+            case '3':
+            console.log('Wednesday');
+            break;
+            case '4':
+            console.log('Thursday');
+            break;
+            case '5':
+            console.log('Friday');
+            break;
+            case '6':
+            console.log('Saturday');
+            break;
+            case '7':
+            console.log('Sunday');
+    }
 
 7.  За допомогою switch реалізуйте обчислення виразу, передаючи у switch, як параметр, символ математичної операції.
     Математичні операції для обчислення: "+", "-", "*", "/".
