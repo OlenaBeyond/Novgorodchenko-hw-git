@@ -17,7 +17,21 @@ if(hamburgers1 >=4 && fries1){
 } else {
     console.log('Ми йдемо в інше кафе')
 };
- 
+
+
+ function checkmenu(hamburgers1,fries1) {
+    if(hamburgers1 >= 4 && fries1){
+        console.log('Ми поїли')
+    }
+     else {
+        console.log('Ми йдемо в інше кафе')
+    }}
+    checkmenu(3,1);
+   
+
+
+
+  
 
 2.  Напишіть умовну конструкцію if, що перевіряє, чи знаходиться значення ціни товару між 1000 та 1900 включно.
     Результат виводити в консоль.
@@ -30,7 +44,15 @@ if(hamburgers1 >=4 && fries1){
             console.log('rejected')
         };
 
-
+ function checknum(a,b,c) {
+    if(a >= b && a <= c){
+        console.log('c in')
+    }
+     else {
+        console.log('c out')
+    }}
+    checknum(1001,1000,900);
+   
 
 3.  Напишіть конструкцію if, щоб перевіряє, чи значення ціни товару не знаходиться між 1000 та 1900 включно.
     Реалізуйте два варіанти, один з оператором НЕ !, а інший без цього оператора.
@@ -53,7 +75,15 @@ if(hamburgers1 >=4 && fries1){
     }
 
 
-
+    function checknum(a,b,c) {
+    if(a >= b && a <= c){
+        console.log('c in')
+    }
+     else {
+        console.log('c out')
+    }}
+    checknum(900,1000,900);
+   
 
 4.  За номером пори року вивести назву цієї пори року використовуючи оператор if-else-if
     Результат виводити в консоль.
@@ -73,6 +103,16 @@ if(hamburgers1 >=4 && fries1){
         console.log('false')
     }
 
+
+    function checkseason(winter,spring,summer,autumn) {
+    if(season = 1){
+        console.log('winter')
+    }
+     else {
+        console.log('dont care')
+    }}
+    checkseason(1);
+   
     
 5.  Задано 3 числа (a, b, c), які не рівні між собою.
     Визначити середнє мід цими трьома числами
@@ -108,7 +148,10 @@ else {
     avg = b
 }
 
-console.log("avg(" + a + ", " + b + ", " + c + ") = " + avg)
+console.log ("avg(" + a + ", " + b + ", " + c + ") = " + avg)
+
+
+
 
 6.  Задано номер дня тижня.
     За заданим номером вивести назву дня тижня використовуючи switch.
@@ -137,16 +180,34 @@ console.log("avg(" + a + ", " + b + ", " + c + ") = " + avg)
             break;
             case '7':
             console.log('Sunday');
+    }; 
+
+    
+    function checkdays(Monday,Tuesday,Wednesday,Thursday,Friday,Saturday,Sunday) {
+    if(day = 4){
+        console.log('Thursday')
     }
+     else {
+        console.log('dont care')
+    }}
+    checkdays(4);
+   
+    
 
 7.  За допомогою switch реалізуйте обчислення виразу, передаючи у switch, як параметр, символ математичної операції.
     Математичні операції для обчислення: "+", "-", "*", "/".
     Результат виводити в консоль.
 
+
+
+
     let a = 4;
     let b = 2;
     let sign = '/';
     
+
+   switcg  (a, b) {
+    return a * b;
 
     switch (sign) {
 	case '+': c = a + b; 
@@ -161,16 +222,57 @@ console.log("avg(" + a + ", " + b + ", " + c + ") = " + avg)
 
     console.log(+ c)
 
+
+
+    function sum (a, b) {
+    let c = a + b;
+    return c;
+   }
+   console.log(sum (6,2));
+
+   function subs(a, b) {
+    let c = a - b;
+    return c;
+   }
+   console.log(subs (6,2));
+
+   function mul (a, b) {
+    let c = a * b;
+    return c;
+   }
+   console.log(mul (6,2));
+
+   function div (a, b) {
+    let c = a / b;
+    return c;
+   }
+   console.log(div (6,2))
+
 8.*  Використовуючи властивості рядків (тип string), та регулярний вираз (regular expression) видалити голосні букви зі слова.
 
    const str = 'Alaska';
    const noVowels = str.replace(/[aeiou]/gi, '');
    console.log(noVowels); 
 
-   
+
+   function removeVow(word) {
+  return word.replace(/[aeiou]/gi, '');
+}
+
+let newWord = removeVow("Alaska");
+console.log(newWord);
+
 9.*  Використовуючи оператор if реалізувати логіку переводу метрів в кілометри,
     так щоб в консоль виводився результат обчислень з правильним закінченням.
     Наприклад: 1000 метрів це 1 кілометр;  32 метри це 0,032 кілометра і т.д.
 
     Підказка(https://ukr-lifehacks.ed-era.com/rozdil-9/zvyazok_chislivnykiv)
 */
+
+   
+   
+
+
+  
+
+
